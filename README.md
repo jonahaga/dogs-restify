@@ -12,7 +12,6 @@ You can view the demo by running:
 npm run-script demo
 ```
 
-
 ## API
 
 ### /dogs

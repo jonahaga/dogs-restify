@@ -1,5 +1,5 @@
 {
-  "name": "dogs-api",
+  "name": "dogs-restify",
   "version": "1.0.0",
   "description": "Dog owner API",
   "main": "index.js",
