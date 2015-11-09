@@ -22,11 +22,11 @@ npm run-script demo
   ```
 #### GET /dogs/:name
   ```
-  curl -i -X GET http://localhost:8000/dogs/Sasha -d '{"name": "Sahsa", "color": "black and tan"}'
+  curl -i -X GET http://localhost:8000/dogs/Sasha
   ```
 #### POST /dogs
   ```
-  curl -i -X POST http://localhost:8000/dogs
+  curl -i -X POST http://localhost:8000/dogs -d '{"name": "Sahsa", "color": "black and tan"}'
   ```
 #### PUT /dogs/:name
   ```
