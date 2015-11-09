@@ -4,6 +4,8 @@
   "description": "Dog owner API",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "demo": "bash demo.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chris Camacho <ccamacho@salesforce.com>",
