@@ -29,7 +29,7 @@ function getOne(req, res, next) {
 }
 
 function post(req, res, next) {
-  var dog = JSON.parse(req.body);
+  var dog = (typeof req.body == 'object')? req.body: JSON.parse(req.body);
   fixture_data.push(dog);
   res.send(fixture_data);
   return next();
@@ -37,7 +37,7 @@ function post(req, res, next) {
 
 function put(req, res, next) {
   var index = dash.findIndex(fixture_data, {name: req.params.name});
-  var dog = JSON.parse(req.body);
+  var dog = (typeof req.body == 'object')? req.body: JSON.parse(req.body);
 
   if (index === -1) {
     fixture_data.push(dog);

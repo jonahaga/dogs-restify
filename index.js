@@ -15,3 +15,5 @@ server.del('/dogs/:name', dogs.del);
 server.listen('8000', function() {
   console.log('%s listening on port %s', server.name, server.url)
 });
+
+module.exports = server;

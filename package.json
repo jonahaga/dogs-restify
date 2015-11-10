@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "demo": "bash demo.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "author": "Chris Camacho <ccamacho@salesforce.com>",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "restify": "^4.0.3"
   },
   "devDependencies": {
+    "chai": "^3.4.1",
     "mocha": "^2.3.3"
   }
 }
