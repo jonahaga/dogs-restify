@@ -3,12 +3,12 @@ var dash = require('lodash');
 var fixture_data = [
   {
     name: "Sasha",
-    breed: "Dacshund",
+    breed: "Dachshund",
     color: "black and tan",
   },
   {
     name: "Hildi",
-    breed: "Dacshund",
+    breed: "Dachshund",
     color: "red",
   },
 ];

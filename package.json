@@ -6,13 +6,14 @@
   "scripts": {
     "start": "node index.js",
     "demo": "bash demo.sh",
-    "test": "mocha test"
+    "test": "NODE_ENV=test mocha test"
   },
   "author": "Chris Camacho <ccamacho@salesforce.com>",
   "license": "ISC",
   "dependencies": {
     "async": "^1.5.0",
     "lodash": "^3.10.1",
+    "nodemon": "^1.8.1",
     "restify": "^4.0.3"
   },
   "devDependencies": {
