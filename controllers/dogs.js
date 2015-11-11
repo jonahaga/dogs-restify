@@ -13,13 +13,21 @@ var fixture_data = [
   },
 ];
 
+function setUpRoutes(server) {
+  server.get('/dogs', get);
+  server.post('/dogs', post);
+  server.get('/dogs/:name', getOne);
+  server.put('/dogs/:name', put);
+  server.del('/dogs/:name', del);
+}
+
 function get(req, res, next) {
   res.send(fixture_data);
   return next();
 }
 
 function getOne(req, res, next) {
-  var index = dash.findIndex(fixture_data, {name: req.params.name});
+  var index = dash.findIndex(fixture_data, { name: req.params.name });
   if (index === -1) {
     res.send(404, new Error('Could not find dog with name ' + req.params.name));
   } else {
@@ -61,9 +69,5 @@ function del(req, res, next) {
 }
 
 module.exports = {
-  get: get,
-  getOne: getOne,
-  post: post,
-  put: put,
-  del: del,
+  setUpRoutes: setUpRoutes,
 };
